@@ -1,0 +1,206 @@
+{
+  "accrual_periodicity": "monthly",
+  "additional_limitations": "",
+  "citation": "",
+  "contact_email": "opendata@dhcs.ca.gov",
+  "data_collection_tool": "",
+  "data_license": "Terms of Use",
+  "de_identification_method": "http://www.dhcs.ca.gov/dataandstats/Pages/PublicReportingGuidelines.aspx",
+  "description": "This dataset contains an alphabetical list, by county, of all Mental Health Rehabilitation Centers (MHRC) and Psychiatric Health Facilities (PHF) licensed by the Department of Health Care Services (DHCS). Within DHCS, the Licensing and Certification Division (LCD), Licensing Branch 2, Mental Health Licensing (MHL) Section is responsible for assuring that quality mental health treatment and services are provided to all program participants in a safe and healthy environment through licensure and oversight of a statewide system of 24-hour psychiatric and rehabilitation care facilities.",
+  "geo_coverage": "California",
+  "geographic_granularity": "statewide",
+  "keywords": [
+    "Care",
+    "Centers",
+    "Certification",
+    "DHCS",
+    "Facilities",
+    "Health",
+    "Health Care Services Licensing",
+    "Licensing",
+    "MHRC",
+    "Mental",
+    "PHF",
+    "Psychiatric",
+    "Rehabilitation",
+    "Services"
+  ],
+  "limitations": "Limitations",
+  "name": "licensed-mental-health-rehabilitation-centers-mhrc-and-psychiatric-health-facilities-phf",
+  "program_web_page": "https://www.dhcs.ca.gov",
+  "related_resources": "",
+  "resources": [
+    {
+      "description": "This dataset contains an alphabetical list, by county, of all Mental Health Rehabilitation Centers (MHRC) and Psychiatric Health Facilities (PHF) licensed by the Department of Health Care Services (DHCS). Within DHCS, the Licensing and Certification Division (LCD), Licensing Branch 2, Mental Health Licensing (MHL) Section is responsible for assuring that quality mental health treatment and services are provided to all program participants in a safe and healthy environment through licensure and oversight of a statewide system of 24-hour psychiatric and rehabilitation care facilities.",
+      "format": "CSV",
+      "hash": "c02e542ac42d876dd7394afb3849748f",
+      "name": "dhcs-licensed-mental-health-rehabilitation-centers-mhrc-and-psychiatric-health-facilities-phf",
+      "path": "dhcs-licensed-mental-health-rehabilitation-centers-mhrc-and-psychiatric-health-facilities-phf.csv",
+      "schema": {
+        "fields": [
+          {
+            "description": "County code of where the facility is located.",
+            "name": "County Code",
+            "title": "County Code",
+            "type": "string"
+          },
+          {
+            "description": "The license number issued by the Department of Health Care Services (DHCS), Licensing and Certification Division (LCD), Licensing Branch 2, Mental Health Licensing (MHL) Section for licensed Mental Health Rehabilitation Centers (MHRC) and Psychiatric Health Facilities (PHF).Legal Name",
+            "name": "Record ID",
+            "title": "Record ID",
+            "type": "string"
+          },
+          {
+            "description": "The legal name of the entity having the authority and responsibility for the operation of the facility.",
+            "name": "Legal Name",
+            "title": "Legal Name",
+            "type": "string"
+          },
+          {
+            "description": "The name in which the facility does business under.",
+            "name": "Facility Name",
+            "title": "Facility Name",
+            "type": "string"
+          },
+          {
+            "description": "The facility address. The location where services are provided.",
+            "name": "Physical Address",
+            "title": "Physical Address",
+            "type": "string"
+          },
+          {
+            "description": "Secondary facility address information (Suite, Floor, etc.).",
+            "name": "Physical Address 2",
+            "title": "Facility Address 2",
+            "type": "string"
+          },
+          {
+            "description": "Address used for postal mail directed to the facility.",
+            "name": "Mailing Address",
+            "title": "Mailing Address",
+            "type": "string"
+          },
+          {
+            "description": "Secondary mailing address information (Suite, Floor, etc.).",
+            "name": "Mailing Address 2",
+            "title": "Address used for postal mail directed to the facility.",
+            "type": "string"
+          },
+          {
+            "description": "Name of the city where the facility is located.",
+            "name": "Physical City",
+            "title": "Physical City",
+            "type": "string"
+          },
+          {
+            "description": "Name of the city where the mailing address is located.",
+            "name": "Mailing City",
+            "title": "Mailing City",
+            "type": "string"
+          },
+          {
+            "description": "Name of the state where the facility is located.",
+            "name": "Physical State",
+            "title": "Physical State",
+            "type": "string"
+          },
+          {
+            "description": "Name of the state where the mailing address is located.",
+            "name": "Mailing State",
+            "title": "Mailing State",
+            "type": "string"
+          },
+          {
+            "description": "Zip code of where the facility is located.",
+            "name": "Physical Zip",
+            "title": "Physical Zip",
+            "type": "string"
+          },
+          {
+            "description": "Zip code of where the mailing address is located.",
+            "name": "Mailing Zip",
+            "title": "Mailing Zip",
+            "type": "string"
+          },
+          {
+            "description": "Facility telephone number(s).",
+            "name": "Facility Phone",
+            "title": "Facility Phone",
+            "type": "string"
+          },
+          {
+            "description": "The type of application identifies if the DHCS Mental Health Licensing Section licenses the facility.",
+            "name": "Type of Application",
+            "title": "Type of Program",
+            "type": "string"
+          },
+          {
+            "description": "Indicates whether services provided take place at an MHRC or a PHF.",
+            "name": "Service Type",
+            "title": "Service Type",
+            "type": "string"
+          },
+          {
+            "description": "Indicates the maximum number of clients/patients, licensed beds, authorized.",
+            "name": "Client/Patient Capacity",
+            "title": "Client/Patient Capacity",
+            "type": "string"
+          },
+          {
+            "description": "Expiration date of the facility’s current license.",
+            "name": "Expiration Date",
+            "title": "Expiration Date",
+            "type": "string"
+          },
+          {
+            "description": "Describes the targeted population of the facility or program.\r\n•\tAdult\r\n•\tChildren\r\n•\tCo-Ed\r\n",
+            "name": "Target Population",
+            "title": "Target Population",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/272b9ce1-1bcf-4bf4-8294-ab3704b79608/resource/ef9f4daf-892c-45f6-b46a-3037c5a93b23/download/mhls-mhrc-phf-facilities-jan-2022.xlsx-updated.csv",
+          "title": "DHCS Licensed Mental Health Rehabilitation Centers (MHRC) and Psychiatric Health Facilities (PHF)"
+        }
+      ],
+      "title": "DHCS Licensed Mental Health Rehabilitation Centers (MHRC) and Psychiatric Health Facilities (PHF)"
+    },
+    {
+      "description": "County Code descriptions associated with the  facility list.",
+      "format": "CSV",
+      "hash": "4678f8dd064df4d4674765d537255b74",
+      "name": "county-code-list",
+      "path": "county-code-list.csv",
+      "schema": {
+        "fields": [
+          {
+            "name": "COUNTY CODE",
+            "type": "string"
+          },
+          {
+            "name": "COUNTY",
+            "type": "string"
+          }
+        ]
+      },
+      "sources": [
+        {
+          "path": "https://data.chhs.ca.gov/dataset/272b9ce1-1bcf-4bf4-8294-ab3704b79608/resource/ff6478dd-200c-4c44-a545-d32eac14e9fb/download/mhl-section-ca-county-code-list-april-2021.csv",
+          "title": "County Code List"
+        }
+      ],
+      "title": "County Code List"
+    }
+  ],
+  "secondary_sources": "",
+  "sources": [
+    {
+      "name": "Licensing and Certification Division / Licensing Branch 2 / Mental Health Licensing Section / Licensing Unit 2"
+    }
+  ],
+  "temporal_coverage": "January 2022",
+  "title": "Licensed Mental Health Rehabilitation Centers (MHRC) and Psychiatric Health Facilities (PHF)."
+}
