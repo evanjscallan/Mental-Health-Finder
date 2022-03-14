@@ -1,4 +1,6 @@
 import React from "react";
+import "./styles.css";
+
 
 import {
   GoogleMap,
@@ -8,10 +10,9 @@ import {
 } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "800px",
-  height: "400px",
+  width: "30rem",
+  height: "30rem",
 };
-
 
 
 const center = {
@@ -21,9 +22,7 @@ const center = {
 
 class MapAPI extends React.Component {
   render(lat, lng, props) {
-    const onLoad = (marker) => {
-      console.log("marker: ", marker);
-    };
+  
     const position = {
       lat: this.props.latValue,
       lng: this.props.lngValue,
@@ -32,23 +31,33 @@ class MapAPI extends React.Component {
 
 
     return (
-      <div>
+      <div className='map'>
+      
 
         <LoadScript googleMapsApiKey="AIzaSyDXdV2zeHYYqx6hOxAnDtcWml-EFWWQ40U">
+        
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
-            zoom={3}
+            zoom={5}
           >
-            <Marker onLoad={onLoad} position={position} />
+
+            <Marker position={position} />
 
             {/* Child components, such as markers, info windows, etc. */}
             <></>
           </GoogleMap>
+       
         </LoadScript>
+      
       </div>
     );
   }
 }
 
 export default React.memo(MapAPI);
+
+/*
+  const onLoad = (marker) => {
+      console.log("marker: ", marker);
+    }; */
