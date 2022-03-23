@@ -1,5 +1,5 @@
 import { Component } from "react";
-import React from 'react'
+import React, { useState } from 'react'
 import mhDirectory from "./../utils/CaMentalHealth.json";
 import "./styles.css";
 import Card from '@mui/material/Card'
@@ -12,35 +12,52 @@ import Typography from '@mui/material/Typography';
 
 
 
-function List(props) {
+export default class List extends React.Component {
+	constructor(props){
+		super(props);
+
+	this.state = {
+		clickData: ''
+		}
+	this.setClickedLocation = this.setClickedLocation.bind(this);
+	}
+
+
+
+	setClickedLocation(elementIndex, func){	
+		this.setState({ clickedData: elementIndex })
+		console.log("STATE: " + this.state.clickedData)
+		this.props.func(this.state.clickedData)
+
+
+	}
+
 	
-	//filters out of the directory by facility name if the input is not empty
-	//lower case makes it easier
-	//includes is a true or false statement so this means whether the input includes props.input (user input in this case run through function)
-	const filteredData = mhDirectory.filter((el) => {
-		if (props.input === "") {
+	//filters list based on facility name or physical address
+	render() {
+		let	filteredData = mhDirectory.filter((el) => {
+		if (this.props.input === "") {
 			return el;
 		} else {
-			return el.Facility_Name.toLowerCase().includes(props.location);
+			return el.Facility_Name.toLowerCase().includes(this.props.location) 
+			|| 
+			el.Physical_Address.toLowerCase().includes(this.props.location);
 		}
 	});
 
-	//passes clicked card data back up to index to plot marker
-	function handleClick(elementIndex, func) {
-		props.func(elementIndex)
-	}
 	return (
 
 		<div className='cards-container'>
 		
-			<p>{props.location}</p>
+			<p>{this.props.location}</p>
 
 			<div>
+			
 				
 				{filteredData.map((place, Physical_Address) => (
 					<Card
-						onClick={(e) => handleClick(place.Physical_Address)}
-						className='listItem '
+						onClick={(elementIndex) => this.setClickedLocation(place.Physical_Address) }
+						className='listItem'
 						key={place.Record_ID}
 					>
 						<CardHeader
@@ -68,6 +85,5 @@ function List(props) {
 		</div>
 	);
 }
-
-export default List;
+}
 export { mhDirectory };

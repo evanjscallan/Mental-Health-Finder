@@ -10,13 +10,13 @@ import {
 } from "@react-google-maps/api";
 
 const containerStyle = {
-  width: "30rem",
+  width: "100%",
   height: "30rem",
 };
 
 
 const center = {
-  lat: 35.1611,
+  lat: 36.5611,
   lng: 241.0522,
 };
 
@@ -39,7 +39,7 @@ class MapAPI extends React.Component {
           <GoogleMap
             mapContainerStyle={containerStyle}
             center={center}
-            zoom={5}
+            zoom={5.5}
           >
 
             <Marker position={position} />

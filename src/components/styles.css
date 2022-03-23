@@ -18,7 +18,7 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid blue
+	
 
 }
 
@@ -28,7 +28,7 @@ body{
 }
 
 .listItem:hover{
-	background-color: blue;
+	background-color: lightblue;
 }
 
 .main{
@@ -37,7 +37,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	background-color: lightblue;
+	
 }
 
 
