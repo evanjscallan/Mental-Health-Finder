@@ -12,6 +12,8 @@ import {
 const containerStyle = {
   width: "100%",
   height: "30rem",
+  minWidth: '80vh',
+  minheight: 'auto',
 };
 
 

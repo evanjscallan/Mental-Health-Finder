@@ -22,6 +22,10 @@ body{
 
 }
 
+.noResults{
+	height: 30vh;
+}
+
 .listItem{
 	width: 40%;
 	margin: 1em;

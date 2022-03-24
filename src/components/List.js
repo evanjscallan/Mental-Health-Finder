@@ -36,26 +36,34 @@ export default class List extends React.Component {
 	//filters list based on facility name or physical address
 	render() {
 		let	filteredData = mhDirectory.filter((el) => {
-		if (this.props.input === "") {
+		if (this.props.input == "") {
 			return el;
 		} else {
 			return el.Facility_Name.toLowerCase().includes(this.props.location) 
 			|| 
 			el.Physical_Address.toLowerCase().includes(this.props.location);
 		}
+
+
 	});
+	if (filteredData.length == 0){
+		return( 
+		<div className='noResults'>
+			<p>No results found.</p>
+		</div>
+		)
+	}
 
 	return (
 
 		<div className='cards-container'>
 		
-			<p>{this.props.location}</p>
-
 			<div>
-			
-				
+	
 				{filteredData.map((place, Physical_Address) => (
+
 					<Card
+						sx={{ maxWidth: 345, minWidth: 345 }}
 						onClick={(elementIndex) => this.setClickedLocation(place.Physical_Address) }
 						className='listItem'
 						key={place.Record_ID}
@@ -77,7 +85,8 @@ export default class List extends React.Component {
 						</CardContent>
 					
 					</Card>
-
+					
+				
 				))}
 			
 			</div>
