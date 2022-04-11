@@ -1,48 +1,133 @@
-body{
-	margin: 0;
-	height: 100%;
-	width: 100%;
-	overflow-x: hidden;
+body,
+html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+.btn-clear {
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    position: absolute;
+    top: 60px;
+    right: 60px;
+}
+
+
+.main-text{
+    margin-left: 2rem;
+    font-size: 3rem;
+}
+
+.ctr-text{
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.form-container-top{
+    border: 1px solid red;
+    text-align: center;
+}
+
+
+.main {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 2rem 2rem 2rem;
+
+}
+
+.textField {
+    margin-left: 2rem;
 }
 
 
 
-.hidden{
-	display: none;
+
+.dark {
+    background-color: #212121;
+    color: white;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
 }
 
 .cards-container{
-	display: flex;
-	margin: 0;
-	padding: 2em;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	
+    border: 1px solid lightblue;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    margin: 2rem;
+}
+
+.cards-container-dark{
+    border: 1px solid black;
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    margin: 2rem;
 
 }
 
-.noResults{
-	height: 30vh;
+.cards-container>*{
+    min-width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex: 1 1 1 1;
+   
+
 }
 
-.listItem{
-	width: 40%;
-	margin: 1em;
-}
-
-.listItem:hover{
-	background-color: lightblue;
-}
-
-.main{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-	
+.margin-bottom{
+    margin-bottom: 2rem;
 }
 
 
+.hidden {
+    display: none;
+}
 
+.results{
+    font-size: 2rem;
+}
+
+.mapAPI{
+    margin-left: 2rem;
+}
+
+.descriptionText{
+    margin-left: 2rem;
+}
+
+.noResults {
+    border: 1px solid black;
+    padding: 2rem;
+    height: 100%;
+    margin: 2rem;
+}
+
+.listItem {
+    width: 50%;
+    margin: 1em;
+}
+
+.listItem:hover {
+    background-color: lightblue;
+}

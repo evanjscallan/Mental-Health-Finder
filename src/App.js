@@ -1,12 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import MapsAPI from './utils/api'
-import Index from './components/Index'
+import Layout from './components/Layout'
 
 
 function App() {
   return (
-    <Index/>
+    <Layout/>
   );
 }
 

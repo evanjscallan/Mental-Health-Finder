@@ -1,7 +1,7 @@
 import React from 'react'
 import { Map, GoogleApiWrapper, Marker} from 'google-maps-react';
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
-
+//File for Map API.
 const mapStyles = {
 	width: '50%',
 	height: '50%',

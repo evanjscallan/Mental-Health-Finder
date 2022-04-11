@@ -6,7 +6,10 @@
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@googlemaps/react-wrapper": "^1.1.25",
+    "@mui/icons-material": "^5.5.1",
     "@mui/material": "^5.5.0",
+    "@mui/x-data-grid": "^5.7.0",
+    "@mui/x-data-grid-generator": "^5.7.0",
     "@react-google-maps/api": "^2.7.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.0.0",
@@ -19,6 +22,7 @@
     "react-google-maps": "^9.4.5",
     "react-google-places-autocomplete": "^3.3.4",
     "react-scripts": "5.0.0",
+    "typescript": "^4.6.2",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
