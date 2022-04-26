@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Application-Specific Instructions:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an application designed to help users quickly and efficiently find mental health care in the state of California. The application is designed utilizing public data information from [da.chss.gov] and was mined and processed through an included javascript file **/utils/dataextract.js**.
+(https://data.chhs.ca.gov/dataset)
+
+1. Follow the React/yarn instructions below for installation/start-up.
+2. Navigate to localhost:3000 (or the hosted Netlify server).
+3. The application contains two primary elements: The search engine and reference map.
+4. Enter your search query in the provided input box.
+5. To populate the map with a facility location, click on the chosen search result.
+
+
+
 
 ## Available Scripts
 
